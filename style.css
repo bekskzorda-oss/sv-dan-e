@@ -13,24 +13,17 @@ body{
     padding:30px;
     border-radius:20px;
     text-align:center;
-    width:350px;
+    width:400px;
     box-shadow:0 10px 30px rgba(0,0,0,.2);
 }
 
-.cat{
-    width:120px;
-}
-
-h1{
-    color:#ff4d6d;
-}
-
 button{
-    border:none;
     padding:12px 25px;
+    border:none;
     border-radius:10px;
     cursor:pointer;
     font-size:18px;
+    margin:5px;
 }
 
 .yes{
@@ -42,20 +35,9 @@ button{
     background:#ddd;
 }
 
-.hidden{
-    display:none;
-}
-
-input{
+input, select{
     width:90%;
     padding:10px;
-    margin:10px 0;
     border-radius:10px;
     border:1px solid #ccc;
-}
-
-#result{
-    margin-top:15px;
-    font-weight:bold;
-    color:#ff4d6d;
 }
