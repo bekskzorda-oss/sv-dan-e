@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Приглашение ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" class="cat">
+
+    <h1>Привет ❤️</h1>
+    <p>Пойдешь со мной на свидание?</p>
+
+    <div class="buttons">
+        <button class="yes" onclick="showForm()">Да 💖</button>
+        <button class="no" id="noBtn">Нет 😢</button>
+    </div>
+
+    <div id="formBlock" class="hidden">
+        <h2>Выбери дату и время 🌹</h2>
+
+        <input type="date" id="date">
+        <input type="time" id="time">
+
+        <button onclick="confirmDate()">Подтвердить ❤️</button>
+
+        <div id="result"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
