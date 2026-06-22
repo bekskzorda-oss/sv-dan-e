@@ -1,25 +1,43 @@
-const noBtn = document.getElementById("noBtn");
-
-noBtn.addEventListener("mouseover", () => {
-    noBtn.style.position = "absolute";
-    noBtn.style.left = Math.random() * 80 + "%";
-    noBtn.style.top = Math.random() * 80 + "%";
-});
-
-function showForm(){
-    document.getElementById("formBlock").classList.remove("hidden");
+body{
+    margin:0;
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+    font-family:Arial,sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
 }
 
-function confirmDate(){
+.container{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    width:400px;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
 
-    let date = document.getElementById("date").value;
-    let time = document.getElementById("time").value;
+button{
+    padding:12px 25px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:18px;
+    margin:5px;
+}
 
-    if(!date || !time){
-        alert("Выберите дату и время ❤️");
-        return;
-    }
+.yes{
+    background:#ff4d6d;
+    color:white;
+}
 
-    document.getElementById("result").innerHTML =
-        `💖 Отлично! Жду тебя ${date} в ${time} 💖`;
+.no{
+    background:#ddd;
+}
+
+input, select{
+    width:90%;
+    padding:10px;
+    border-radius:10px;
+    border:1px solid #ccc;
 }
